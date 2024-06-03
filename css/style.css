@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roulette Game</title>
+    <style>
+      #roulette-wheel {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+        background-image: radial-gradient(
+          white 10%,
+          transparent 10%
+        ),
+        radial-gradient(white 10%, transparent 10%),
+        radial-gradient(white 15%, transparent 15%),
+        radial-gradient(white 20%, transparent 20%),
+        radial-gradient(white 25%, transparent 25%),
+        radial-gradient(white 30%, transparent 30%),
+        radial-gradient(white 35%, transparent 35%),
+        radial-gradient(white 40%, transparent 40%),
+        radial-gradient(white 45%, transparent 45%),
+        radial-gradient(white 50%, transparent 50%),
+        radial-gradient(white 55%, transparent 55%),
+        radial-gradient(white 60%, transparent 60%),
+        radial-gradient(white 65%, transparent 65%),
+        radial-gradient(white 70%, transparent 70%),
+        radial-gradient(white 75%, transparent 75%),
+        radial-gradient(white 80%, transparent 80%),
+        radial-gradient(white 85%, transparent 85%),
+        radial-gradient(white 90%, transparent 90%),
+        radial-gradient(white 95%, transparent 95%),
+        radial-gradient(white 100%, transparent 100%),
+        conic-gradient(
+          #f00 0deg 18.75deg,
+          #f90 18.75deg 37.5deg,
+          #ff0 37.5deg 56.25deg,
+          #df0 56.25deg 75deg,
+          #0f0 75deg 93.75deg,
+          #0ff 93.75deg 112.5deg,
+          #00f 112.5deg 131.25deg,
+          #40f 131.25deg 150deg,
+          #70f 150deg 168.75deg,
+          #90f 168.75deg 187.5deg,
+          #c0f 187.5deg 206.25deg,
+          #f0f 206.25deg 225deg,
+          #f90 225deg 243.75deg,
+          #ff0 243.75deg 262.5deg,
+          #fff 262.5deg 281.25deg,
+          #f0f 281.25deg 300deg,
+          #f90 300deg 318.75deg,
+          #ff0 318.75deg 337.5deg,
+          #fff 337.5deg 356.25deg,
+          #f0f 356.25deg 360deg
+        );
+      }
+      #roulette-ball {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 130px;
+        left: 130px;
+        animation: ball-spin 5s linear infinite;
+      }
+      .slot {
+        width: 50px;

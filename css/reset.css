@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анимированная машинка</title>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #87CEEB; /* Голубой цвет неба */
+    }
+    
+    .road {
+        width: 100%;
+        height: 50px;
+        background-color: #696969; /* Серый цвет дороги */
+        position: absolute;
+        bottom: 0;
+        animation: roadMove 2s linear infinite;
+    }
+    
+    @keyframes roadMove {
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    .car {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(255, 0, 212);
+        position: absolute;
+        bottom: 55px;
+        left: 0;
+        animation: carMove 2s linear infinite;
+    }
+    
+    @keyframes carMove {
+        100% {
+            left: calc(100% - 100px);
+        }
+    }
+    
+    .cloud {
+        width: 150px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        animation: cloudMove 10s linear infinite;
+    }
+    
+    @keyframes cloudMove {
+        100% {
+            left: calc(100% + 150px);
+        }
+    }
+</style>
+</head>
+<body>
+<div class="road"></div>
+<div class="car"></div>
+<div class="cloud"></div>
+</body>
+</html>
